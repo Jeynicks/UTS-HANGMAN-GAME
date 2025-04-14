@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Use viewport height instead of min-height */
+    width: 100vw;
+    overflow: hidden; /* Prevent scrolling */
+    background: linear-gradient(135deg, #5e63ba, #b65ec2);
+    padding: 5px;
+    margin: 0;
+    position: fixed; /* Prevent body from scrolling */
+    top: 0;
+    left: 0;
+}
+
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s;
+}
+
+.loading-bar-container {
+    width: 70%;
+    max-width: 250px;
+    height: 15px;
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.loading-bar {
+    width: 0;
+    height: 100%;
+    background-color: #00f;
+    transition: width 0.5s;
+}
+
+.loading-message {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    font-size: 14px;
+}
+
+.loading-gif {
+    width: 50%;
+    max-width: 150px;
+    height: auto;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9998;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.score-points {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background: white;
+    z-index: 10;
+}
+
+.score-points h4 {
+    margin: 0;
+    font-size: clamp(14px, 4vw, 24px);
+    color: #333;
+}
+
+.container {
+    width: 95%;
+    max-width: 850px;
+    height: 95vh; /* Fill most of the viewport height */
+    max-height: 800px;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.hangman-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-height: 35%;
+}
+
+.hangman-box video {
+    height: auto;
+    max-height: 80%;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.hangman-box h1 {
+    font-size: clamp(1rem, 4vw, 1.8rem);
+    text-align: center;
+    text-transform: uppercase;
+    color: #1a1c27;
+    margin: 5px 0;
+}
+
+.game-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    padding: 5px 0;
+}
+
+.word-display {
+    display: flex;
+    gap: 3px;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.word-display .letter {
+    width: clamp(18px, 4vw, 25px);
+    font-size: clamp(1.2rem, 4vw, 2rem);
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #1a1c27;
+    color: #1a1c27;
+}
+
+.word-display .letter.guessed {
+    border-color: transparent;
+    margin: -10px 0 10px;
+}
+
+.game-box h4 {
+    text-align: center;
+    font-size: clamp(0.9rem, 3.5vw, 1.2rem);
+    font-weight: 600;
+    margin: 5px 0;
+    color: #1a1c27;
+}
+
+.game-box .guesses-text b {
+    color: #ff0000;
+}
+
+.game-box .keyboard {
+    display: flex;
+    gap: 3px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-height: 40vh;
+    overflow-y: auto;
+}
+
+:where(.game-modal, .keyboard) button {
+    color: white;
+    font-size: clamp(0.8rem, 3vw, 1.1rem);
+    font-weight: 700;
+    background-color: #30638e;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.keyboard button {
+    width: calc(100% / 9 - 3px);
+    height: calc(13vw / 3);
+    min-height: 35px;
+    max-height: 45px;
+    padding: 0;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 500px) {
+    .keyboard button {
+        width: calc(100% / 7 - 3px);
+    }
+}
+
+.keyboard button[disabled] {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+:where(.game-modal, .keyboard) button:hover {
+    background-color: #1a1c27;
+}
+
+.game-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.4s ease;
+    padding: 15px;
+}
+
+.game-modal.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.game-modal .content {
+    background: rgba(255, 255, 255, 0.9);
+    max-width: 380px;
+    width: 90%;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    padding: 20px 15px;
+}
+
+.game-modal img {
+    max-width: 120px;
+    width: 40%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.game-modal h4 {
+    font-size: clamp(1.3rem, 4.5vw, 1.8rem);
+    color: #1a1c27;
+}
+
+.game-modal p {
+    font-size: clamp(0.9rem, 3.5vw, 1.3rem);
+    margin: 10px 0 20px;
+    font-weight: 600;
+}
+
+.game-modal p b {
+    color: #30638e;
+    font-weight: 700;
+}
+
+.game-modal button {
+    padding: 10px 20px;
+    background-color: #1a1c27;
+    color: white;
+    font-size: clamp(0.9rem, 3.5vw, 1.2rem);
+    font-weight: 700;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    min-height: 44px;
+}
+
+/* Landscape orientation on mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .container {
+        flex-direction: row;
+        height: 90vh;
+    }
+    
+    .hangman-box {
+        width: 40%;
+        max-height: none;
+        height: 100%;
+    }
+    
+    .game-box {
+        width: 60%;
+        height: 100%;
+    }
+    
+    .hangman-box video {
+        max-height: 70%;
+    }
+    
+    .keyboard button {
+        height: 30px;
+        min-height: 30px;
+    }
+}
+
+/* Small devices optimization */
+@media (max-height: 600px) {
+    .hangman-box h1 {
+        font-size: clamp(0.9rem, 3vw, 1.2rem);
+        margin: 2px 0;
+    }
+    
+    .game-box h4 {
+        font-size: clamp(0.8rem, 3vw, 1rem);
+        margin: 3px 0;
+    }
+    
+    .keyboard button {
+        min-height: 30px;
+    }
+    
+    .word-display .letter {
+        margin-bottom: 5px;
+    }
+}
