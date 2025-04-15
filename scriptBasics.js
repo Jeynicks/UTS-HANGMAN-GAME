@@ -1,3 +1,4 @@
+
 const hangmanVid = document.querySelector(".hangman-box video");
 const wordDisplay = document.querySelector(".word-display");
 const guessesText = document.querySelector(".guesses-text b");
@@ -52,7 +53,16 @@ const resetGame = () => {
     hangmanVid.src = `hangman/hangman-${wrongGuessCount}.mp4`;
     guessesText.innerText =`${wrongGuessCount} / ${maxGuess}`;
     keyboardDiv.querySelectorAll("button").forEach(btn => btn.disabled = false);
-    wordDisplay.innerHTML = currentWord.split("").map(() => `<li class="letter"></li>`).join("");
+    
+    wordDisplay.innerHTML = currentWord.split("").map(letter => {
+        if(letter === " ") {
+            correctLetters.push(" ");
+            return `<li class="letter guessed">&nbsp;</li>`;
+        } else {
+            return `<li class="letter"></li>`;
+        }
+    }).join("");
+    
     gameModal.classList.remove("show");
     victorySound.pause();
     victorySound.currentTime = 0;
@@ -60,10 +70,7 @@ const resetGame = () => {
     defeatSound.currentTime = 0;
 
     scorePoints.innerText = `Score: ${score}/${wordList.length}`;
-
-   
 };
-
 const wordList = [
     {
         word: "self",
@@ -436,14 +443,12 @@ const gameOver = (isVictory) => {
     }, 300);
 };
 
-const click = document.getElementById("click");
-
 const initGame = (button, clickedLetter) => {
     click.currentTime = 1.5;
     click.play();
     click.volume = 0.5;
     
-    if(currentWord.includes(clickedLetter)) {
+    if(currentWord.includes(clickedLetter)){
         [...currentWord].forEach((letter, index) => {
             if(letter === clickedLetter) {
                 correctLetters.push(letter);
@@ -454,27 +459,22 @@ const initGame = (button, clickedLetter) => {
                 wordDisplay.querySelectorAll("li")[index].classList.add("guessed");
             }
         });
-        
-   
-        if(correctLetters.length === currentWord.length) {
-            score++; 
-            scorePoints.innerText = `Score: ${score}/${wordList.length}`;
-            gameOver(true);
-        }
     } else {
-
-        wrongGuessCount++;
+        wrongGuessCount++;    
         hangmanVid.src = `hangman/hangman-${wrongGuessCount}.mp4`; 
-        guessesText.innerText = `${wrongGuessCount} / ${maxGuess}`;
-        
-    
-        if(wrongGuessCount === maxGuess) {
-            gameOver(false);
-        }
     }
 
     button.disabled = true;
-}
+    guessesText.innerText =`${wrongGuessCount} / ${maxGuess}`;
+
+    if(wrongGuessCount === maxGuess) return gameOver(false);
+    // Change this line in initGame function
+    if(correctLetters.length === currentWord.replace(/ /g, "").length + (currentWord.match(/ /g) || []).length) {
+        score++; 
+        scorePoints.innerText = `Score: ${score}/${wordList.length}`;
+        gameOver(true);
+    }
+};
 
 
 for (let i = 97; i <= 122; i++) {
@@ -483,14 +483,6 @@ for (let i = 97; i <= 122; i++) {
     keyboardDiv.appendChild(button);
     button.addEventListener("click", e => initGame(e.target, String.fromCharCode(i)));
 }
-
-const additionalButtons = [" ", "-"];
-additionalButtons.forEach(char => {
-    const button = document.createElement("button");
-    button.innerText = char;
-    keyboardDiv.appendChild(button);
-    button.addEventListener("click", e => initGame(e.target, char));
-});
 
 
 getNextWord();
