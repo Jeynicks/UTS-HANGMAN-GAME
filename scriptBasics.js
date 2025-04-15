@@ -113,7 +113,7 @@ const wordList = [
         hint: "The lifelong process of learning culture and developing the self."
     },
     {
-        word: "lookingglass",
+        word: "looking glass",
         hint: "The theory that we shape our identity based on how others see us."
     },
     {
@@ -133,7 +133,7 @@ const wordList = [
         hint: "Freud's term for the primal, pleasure-seeking part of the self."
     },
     {
-        word: "superego",
+        word: "super ego",
         hint: "Freud's concept of the moral and ideal self."
     },
     {
@@ -141,7 +141,7 @@ const wordList = [
         hint: "Part of the mind that influences behavior without conscious awareness."
     },
     {
-        word: "descartes",
+        word: "rene descartes",
         hint: "Philosopher who claimed 'I think, therefore I am.'"
     },
     {
@@ -177,7 +177,7 @@ const wordList = [
         hint: "A philosophy that emphasizes individual freedom and responsibility."
     },
     {
-        word: "selfawareness",
+        word: "self awareness",
         hint: "The ability to reflect on oneself as an individual entity."
     },
     {
@@ -205,7 +205,7 @@ const wordList = [
         hint: "The personal story we tell ourselves about who we are."
     },
     {
-        word: "selfesteem",
+        word: "self esteem",
         hint: "The value a person places on themselves."
     },
     {
@@ -229,7 +229,7 @@ const wordList = [
         hint: "Universal, symbolic images found in myths, art, and dreams (Jung)."
     },
     {
-        word: "selfconcept",
+        word: "self concept",
         hint: "One’s perception of themselves shaped by experience and feedback."
     },
     {
@@ -253,7 +253,7 @@ const wordList = [
         hint: "Philosopher who said, 'God is dead' and emphasized the will to power."
     },
     {
-        word: "sartre",
+        word: "jean paul sartre",
         hint: "Existentialist who claimed 'existence precedes essence.'"
     },
     {
@@ -286,7 +286,7 @@ const wordList = [
         hint: "A consistent characteristic used to describe personality."
     },
     {
-        word: "identitycrisis",
+        word: "identity crisis",
         hint: "Erikson’s term for a period of uncertainty about one’s role in society."
     },
     {
