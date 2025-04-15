@@ -86,304 +86,211 @@ const wordList = [
     },
     {
         word: "society",
-        hint: "A group of people living together that influences one’s self-concept."
+        hint: "A group of people living together that influences one's self-concept."
     },
     {
-        word: "sociology",
-        hint: "The study of society and social interactions."
+        word: "cogito ergo sum",
+        hint: "Descartes' famous phrase meaning 'I think, therefore I am'."
     },
     {
-        word: "anthropology",
-        hint: "The study of human cultures, behaviors, and evolution."
+        word: "bundle theory",
+        hint: "Hume's view that the self is merely a collection of perceptions."
     },
     {
-        word: "collectivism",
-        hint: "The principle valuing the group over the individual, common in Eastern cultures."
+        word: "categorical imperative",
+        hint: "Kant's moral principle that one should act as if their actions were universal law."
     },
     {
-        word: "individualism",
-        hint: "A Western value emphasizing personal independence and self-reliance."
-    },
-    {
-        word: "norms",
-        hint: "Unwritten rules in society that guide behavior."
-    },
-    {
-        word: "socialization",
-        hint: "The lifelong process of learning culture and developing the self."
-    },
-    {
-        word: "looking glass",
-        hint: "The theory that we shape our identity based on how others see us."
-    },
-    {
-        word: "symbolic",
-        hint: "Type of interactionism focusing on symbols and meanings in self-concept."
-    },
-    {
-        word: "role",
-        hint: "A set of behaviors expected from someone in a specific social position."
-    },
-    {
-        word: "ego",
-        hint: "The rational part of the Freudian self that mediates between desires and morals."
-    },
-    {
-        word: "id",
-        hint: "Freud's term for the primal, pleasure-seeking part of the self."
-    },
-    {
-        word: "super ego",
-        hint: "Freud's concept of the moral and ideal self."
-    },
-    {
-        word: "unconscious",
-        hint: "Part of the mind that influences behavior without conscious awareness."
-    },
-    {
-        word: "rene descartes",
-        hint: "Philosopher who claimed 'I think, therefore I am.'"
-    },
-    {
-        word: "plato",
-        hint: "Believed the soul is immortal and divided into rational, spirited, and appetitive parts."
-    },
-    {
-        word: "aristotle",
-        hint: "Saw the self as the soul that makes the body alive and purposeful."
-    },
-    {
-        word: "confucius",
-        hint: "Taught that the self is relational, shaped by social roles and harmony."
-    },
-    {
-        word: "buddhism",
-        hint: "A belief system where the self is impermanent and ever-changing."
-    },
-    {
-        word: "anatta",
-        hint: "Buddhist concept that there is 'no self'—only a flow of experiences."
-    },
-    {
-        word: "karma",
-        hint: "The law of cause and effect in both Hinduism and Buddhism."
-    },
-    {
-        word: "dharma",
-        hint: "In Hinduism, the duties and moral responsibilities tied to one's role."
-    },
-    {
-        word: "existentialism",
-        hint: "A philosophy that emphasizes individual freedom and responsibility."
-    },
-    {
-        word: "self awareness",
-        hint: "The ability to reflect on oneself as an individual entity."
-    },
-    {
-        word: "psychoanalysis",
-        hint: "Freud's theory of the mind and method of exploring the unconscious."
-    },
-    {
-        word: "socialidentity",
-        hint: "Part of the self derived from group memberships like nationality or religion."
-    },
-    {
-        word: "gender",
-        hint: "A social construct often confused with biological sex."
-    },
-    {
-        word: "ethnicity",
-        hint: "A cultural identity based on shared heritage, language, or ancestry."
-    },
-    {
-        word: "religion",
-        hint: "A belief system that often contributes to self-concept and meaning."
-    },
-    {
-        word: "narrative",
-        hint: "The personal story we tell ourselves about who we are."
-    },
-    {
-        word: "self esteem",
-        hint: "The value a person places on themselves."
-    },
-    {
-        word: "humanistic",
-        hint: "Psychological perspective focused on personal growth and self-actualization."
-    },
-    {
-        word: "maslow",
-        hint: "Psychologist known for the hierarchy of needs."
-    },
-    {
-        word: "selfactualization",
-        hint: "The realization of one’s potential, according to Maslow."
-    },
-    {
-        word: "jung",
-        hint: "Psychologist who introduced the idea of the collective unconscious and archetypes."
-    },
-    {
-        word: "archetypes",
-        hint: "Universal, symbolic images found in myths, art, and dreams (Jung)."
-    },
-    {
-        word: "self concept",
-        hint: "One’s perception of themselves shaped by experience and feedback."
-    },
-    {
-        word: "essentialism",
-        hint: "The belief that people have an unchanging essence or nature."
-    },
-    {
-        word: "dualism",
-        hint: "The idea that mind and body are separate entities."
-    },
-    {
-        word: "existence",
-        hint: "In existentialism, it comes before essence."
-    },
-    {
-        word: "phenomenology",
-        hint: "A philosophical method focusing on direct experience."
-    },
-    {
-        word: "nietzsche",
-        hint: "Philosopher who said, 'God is dead' and emphasized the will to power."
+        word: "dasein",
+        hint: "Heidegger's term for human existence or 'being-there'."
     },
     {
         word: "jean paul sartre",
-        hint: "Existentialist who claimed 'existence precedes essence.'"
+        hint: "French existentialist who claimed 'existence precedes essence'."
     },
     {
-        word: "beauvoir",
-        hint: "Existentialist feminist who explored how gender shapes the self."
+        word: "phenomenology",
+        hint: "Philosophical approach focusing on the structures of conscious experience."
     },
     {
-        word: "dialectic",
-        hint: "Hegel's method of arriving at truth through contradiction and synthesis."
-    },
-
-    {
-        word: "behaviorism",
-        hint: "Psychological perspective focused on observable behavior only."
+        word: "dualism",
+        hint: "The view that mind and body are distinct entities."
     },
     {
-        word: "conditioning",
-        hint: "Learning process explored by Pavlov and Skinner."
+        word: "monism",
+        hint: "The view that reality is fundamentally made of one substance."
     },
     {
-        word: "cognition",
-        hint: "Mental processes like thinking, memory, and perception."
+        word: "tabula rasa",
+        hint: "Locke's concept that we are born as a 'blank slate'."
     },
     {
-        word: "personality",
-        hint: "Enduring patterns of thoughts, feelings, and behaviors."
+        word: "confucius",
+        hint: "Chinese philosopher who emphasized the relational nature of self."
     },
     {
-        word: "trait",
-        hint: "A consistent characteristic used to describe personality."
+        word: "no self",
+        hint: "Buddhist concept of 'anatta' denying a permanent self."
     },
     {
-        word: "identity crisis",
-        hint: "Erikson’s term for a period of uncertainty about one’s role in society."
+        word: "carl jung",
+        hint: "Psychologist who developed concepts of the collective unconscious and archetypes."
     },
     {
-        word: "projection",
-        hint: "A defense mechanism where one attributes their own thoughts to others."
+        word: "sigmund freud",
+        hint: "Founder of psychoanalysis who described the id, ego, and superego."
     },
     {
-        word: "introvert",
-        hint: "A personality type that prefers internal reflection over social interaction."
+        word: "george herbert mead",
+        hint: "Sociologist who proposed the self develops through social interaction."
     },
     {
-        word: "extrovert",
-        hint: "A person who gains energy through social engagement."
+        word: "looking glass self",
+        hint: "Cooley's theory that we develop our self-concept based on how others see us."
     },
     {
-        word: "group",
-        hint: "Two or more individuals who interact and identify with one another."
+        word: "social construction",
+        hint: "Theory suggesting reality is created through human interaction and language."
     },
     {
-        word: "roleset",
-        hint: "The multiple expectations attached to a single status."
+        word: "mindfulness",
+        hint: "Eastern practice of being aware of the present moment."
     },
     {
-        word: "status",
-        hint: "A recognized social position in society."
+        word: "enlightenment",
+        hint: "State of awakening or liberation in Buddhist tradition."
     },
     {
-        word: "deviance",
-        hint: "Behavior that violates cultural norms."
-    },
-    {
-        word: "agency",
-        hint: "The capacity of individuals to act independently and make choices."
-    },
-    {
-        word: "structure",
-        hint: "The recurring patterns and systems that influence behavior."
-    },
-    {
-        word: "ritual",
-        hint: "A culturally patterned behavior that communicates meaning and identity."
-    },
-    {
-        word: "ethnocentrism",
-        hint: "Evaluating other cultures based on the standards of your own."
-    },
-    {
-        word: "enculturation",
-        hint: "The process of learning one's own culture."
-    },
-    {
-        word: "ethnography",
-        hint: "A detailed observational study of a particular culture."
-    },
-    {
-        word: "kinship",
-        hint: "Anthropological term for family and social relationships."
-    },
-    {
-        word: "taboo",
-        hint: "A cultural or religious prohibition."
-    },
-    {
-        word: "myth",
-        hint: "A traditional story that conveys cultural beliefs and values."
-    },
-    {
-        word: "totem",
-        hint: "An animal or natural object considered symbolic of a group or clan."
-    },
-    {
-        word: "ancestor",
-        hint: "Someone from whom you are descended, often honored in cultural traditions."
-    },
-    {
-        word: "freedom",
-        hint: "A central theme in existentialism—responsibility for one’s choices."
-    },
-    {
-        word: "alienation",
-        hint: "Marx’s term for the feeling of being disconnected from one’s work and self."
+        word: "friedrich nietzsche",
+        hint: "Philosopher who explored nihilism and the 'will to power'."
     },
     {
         word: "authenticity",
-        hint: "Living in accordance with your true self and values."
+        hint: "Being true to one's own personality, spirit, or character."
     },
     {
-        word: "morality",
-        hint: "Principles concerning the distinction between right and wrong."
+        word: "symbolic interactionism",
+        hint: "Theory focusing on how people interact through symbols and meaning."
     },
     {
-        word: "introspection",
-        hint: "The act of examining one’s own thoughts and feelings."
+        word: "persona",
+        hint: "Jung's concept of the social mask we present to others."
     },
     {
-        word: "transcendence",
-        hint: "Rising above physical or material existence; often spiritual."
+        word: "individualism",
+        hint: "Western ideology emphasizing personal freedom and self-reliance."
+    },
+    {
+        word: "collectivism",
+        hint: "Cultural value prioritizing group harmony over individual goals."
+    },
+    {
+        word: "tao",
+        hint: "Chinese concept of the natural order of the universe."
+    },
+    {
+        word: "meditations",
+        hint: "Marcus Aurelius' stoic reflections on the self and virtue."
+    },
+    {
+        word: "enculturation",
+        hint: "Anthropological process of learning culture's values and norms."
+    },
+    {
+        word: "autopoiesis",
+        hint: "Systems theory concept of self-creating and self-maintaining identity."
+    },
+    {
+        word: "brahman",
+        hint: "Hindu concept of ultimate reality or universal consciousness."
+    },
+    {
+        word: "atman",
+        hint: "Hindu concept of individual soul or self."
+    },
+    {
+        word: "socrates",
+        hint: "Greek philosopher who said 'know thyself'."
+    },
+    {
+        word: "autonomy",
+        hint: "Self-governance and freedom from external control."
+    },
+    {
+        word: "agency",
+        hint: "Capacity of individuals to act independently and make choices."
+    },
+    {
+        word: "self actualization",
+        hint: "Maslow's concept of fulfilling one's potential."
+    },
+    {
+        word: "dialectical self",
+        hint: "Concept that the self is formed through contradictions and synthesis."
+    },
+    {
+        word: "intersubjectivity",
+        hint: "Shared understanding between individuals through social interaction."
+    },
+    {
+        word: "rene descartes",
+        hint: "French philosopher who doubted everything except his own existence."
+    },
+    {
+        word: "david hume",
+        hint: "Scottish philosopher who challenged the notion of a continuous self."
+    },
+    {
+        word: "immanuel kant",
+        hint: "German philosopher who explored the limits of human knowledge."
+    },
+    {
+        word: "martin heidegger",
+        hint: "German philosopher who explored the question of Being."
+    },
+    {
+        word: "john locke",
+        hint: "English philosopher who believed experience shapes who we are."
+    },
+    {
+        word: "charles horton cooley",
+        hint: "Sociologist who developed the looking glass self theory."
+    },
+    {
+        word: "erving goffman",
+        hint: "Sociologist who described social life as a theatrical performance."
+    },
+    {
+        word: "abraham maslow",
+        hint: "Psychologist famous for his hierarchy of needs theory."
+    },
+    {
+        word: "william james",
+        hint: "Philosopher and psychologist who explored the stream of consciousness."
+    },
+    {
+        word: "martin buber",
+        hint: "Jewish philosopher who explored I-Thou relationships."
+    },
+    {
+        word: "maurice merleau ponty",
+        hint: "Phenomenologist who emphasized the body's role in perception."
+    },
+    {
+        word: "lao tzu",
+        hint: "Ancient Chinese philosopher considered the founder of Taoism."
+    },
+    {
+        word: "siddhartha gautama",
+        hint: "Founder of Buddhism who taught about the illusion of self."
+    },
+    {
+        word: "michel foucault",
+        hint: "French philosopher who explored how power shapes identity."
+    },
+    {
+        word: "simone de beauvoir",
+        hint: "Feminist philosopher who wrote 'One is not born, but rather becomes, a woman.'"
     }
 ];
 
