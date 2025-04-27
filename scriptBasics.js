@@ -73,226 +73,207 @@ const resetGame = () => {
 };
 const wordList = [
     {
-        word: "self",
-        hint: "The individual's awareness and understanding of their identity."
+        word: "organizational strategy",
+        hint: "A long-term plan for a company's goals, resources, and direction."
     },
     {
-        word: "identity",
-        hint: "A combination of personal traits, social roles, and group memberships."
+        word: "competitive advantage",
+        hint: "What makes a company better than its rivals."
     },
     {
-        word: "culture",
-        hint: "Anthropologists believe the self is shaped by this shared way of life."
+        word: "information systems",
+        hint: "Technology that helps businesses manage operations and data."
     },
     {
-        word: "society",
-        hint: "A group of people living together that influences one's self-concept."
+        word: "business process reengineering",
+        hint: "Radical redesign of workflows to improve efficiency and quality."
     },
     {
-        word: "cogito ergo sum",
-        hint: "Descartes' famous phrase meaning 'I think, therefore I am'."
+        word: "business process improvement",
+        hint: "Step-by-step method for enhancing business workflows."
     },
     {
-        word: "bundle theory",
-        hint: "Hume's view that the self is merely a collection of perceptions."
+        word: "business process management",
+        hint: "Systematic monitoring and optimization of business activities."
     },
     {
-        word: "categorical imperative",
-        hint: "Kant's moral principle that one should act as if their actions were universal law."
+        word: "focus strategy",
+        hint: "Targeting a specific niche market for business success."
     },
     {
-        word: "dasein",
-        hint: "Heidegger's term for human existence or 'being-there'."
+        word: "low-cost production",
+        hint: "Minimizing expenses to offer the cheapest prices."
     },
     {
-        word: "jean paul sartre",
-        hint: "French existentialist who claimed 'existence precedes essence'."
+        word: "differentiation",
+        hint: "Offering unique features that stand out from competitors."
     },
     {
-        word: "phenomenology",
-        hint: "Philosophical approach focusing on the structures of conscious experience."
+        word: "comparative advantage",
+        hint: "Producing goods at a lower opportunity cost than others."
     },
     {
-        word: "dualism",
-        hint: "The view that mind and body are distinct entities."
+        word: "data analytics",
+        hint: "Examining large datasets to uncover insights."
     },
     {
-        word: "monism",
-        hint: "The view that reality is fundamentally made of one substance."
+        word: "customer relationship management",
+        hint: "System for improving business relationships with customers."
     },
     {
-        word: "tabula rasa",
-        hint: "Locke's concept that we are born as a 'blank slate'."
+        word: "cloud computing",
+        hint: "Using remote servers to store and manage data."
     },
     {
-        word: "confucius",
-        hint: "Chinese philosopher who emphasized the relational nature of self."
+        word: "business intelligence",
+        hint: "Using data to make smarter business decisions."
     },
     {
-        word: "no self",
-        hint: "Buddhist concept of 'anatta' denying a permanent self."
+        word: "e-commerce",
+        hint: "Buying and selling products online."
     },
     {
-        word: "carl jung",
-        hint: "Psychologist who developed concepts of the collective unconscious and archetypes."
+        word: "cybersecurity",
+        hint: "Protecting systems and data from digital attacks."
     },
     {
-        word: "sigmund freud",
-        hint: "Founder of psychoanalysis who described the id, ego, and superego."
+        word: "enterprise resource planning",
+        hint: "Software for managing a company's resources across departments."
     },
     {
-        word: "george herbert mead",
-        hint: "Sociologist who proposed the self develops through social interaction."
+        word: "big data",
+        hint: "Very large sets of information analyzed to reveal patterns."
     },
     {
-        word: "looking glass self",
-        hint: "Cooley's theory that we develop our self-concept based on how others see us."
+        word: "agile workforce",
+        hint: "A flexible team that quickly adapts to market changes."
     },
     {
-        word: "social construction",
-        hint: "Theory suggesting reality is created through human interaction and language."
+        word: "help desk support",
+        hint: "Front-line technical assistance for users."
     },
     {
-        word: "mindfulness",
-        hint: "Eastern practice of being aware of the present moment."
+        word: "remote support",
+        hint: "Providing IT help from a distance."
     },
     {
-        word: "enlightenment",
-        hint: "State of awakening or liberation in Buddhist tradition."
+        word: "flatter hierarchies",
+        hint: "Reducing layers of management for faster communication."
     },
     {
-        word: "friedrich nietzsche",
-        hint: "Philosopher who explored nihilism and the 'will to power'."
+        word: "executive information systems",
+        hint: "Systems providing top managers with key business insights."
     },
     {
-        word: "authenticity",
-        hint: "Being true to one's own personality, spirit, or character."
+        word: "transaction processing systems",
+        hint: "Systems that handle routine business transactions like payroll."
     },
     {
-        word: "symbolic interactionism",
-        hint: "Theory focusing on how people interact through symbols and meaning."
+        word: "expert systems",
+        hint: "AI-driven systems that imitate expert decision-making."
     },
     {
-        word: "persona",
-        hint: "Jung's concept of the social mask we present to others."
+        word: "strategic information systems",
+        hint: "Systems used to gain a competitive business advantage."
     },
     {
-        word: "individualism",
-        hint: "Western ideology emphasizing personal freedom and self-reliance."
+        word: "business strategy",
+        hint: "An organizational master plan to achieve strategic goals."
     },
     {
-        word: "collectivism",
-        hint: "Cultural value prioritizing group harmony over individual goals."
+        word: "global reach",
+        hint: "Ability to expand business operations internationally through technology."
     },
     {
-        word: "tao",
-        hint: "Chinese concept of the natural order of the universe."
+        word: "electronic commerce",
+        hint: "The buying and selling of goods or services using the internet."
     },
     {
-        word: "meditations",
-        hint: "Marcus Aurelius' stoic reflections on the self and virtue."
+        word: "data-driven decisions",
+        hint: "Using facts and analytics to guide business choices."
     },
     {
-        word: "enculturation",
-        hint: "Anthropological process of learning culture's values and norms."
+        word: "organization culture",
+        hint: "Shared values, attitudes, and behaviors within a company."
     },
     {
-        word: "autopoiesis",
-        hint: "Systems theory concept of self-creating and self-maintaining identity."
+        word: "networking and virtual corporations",
+        hint: "Using technology to form business partnerships remotely."
     },
     {
-        word: "brahman",
-        hint: "Hindu concept of ultimate reality or universal consciousness."
+        word: "improved decision-making",
+        hint: "Using tools like dashboards and analytics to make smarter choices."
     },
     {
-        word: "atman",
-        hint: "Hindu concept of individual soul or self."
+        word: "streamlined processes",
+        hint: "Automating and improving workflows to boost efficiency."
     },
     {
-        word: "socrates",
-        hint: "Greek philosopher who said 'know thyself'."
+        word: "enhanced communication",
+        hint: "Speeding up how teams and departments share information."
     },
     {
-        word: "autonomy",
-        hint: "Self-governance and freedom from external control."
+        word: "changing nature of work",
+        hint: "New roles and skills emerging due to technology."
     },
     {
-        word: "agency",
-        hint: "Capacity of individuals to act independently and make choices."
+        word: "increased productivity",
+        hint: "Technology helping employees work more efficiently."
     },
     {
-        word: "self actualization",
-        hint: "Maslow's concept of fulfilling one's potential."
+        word: "focus on innovation",
+        hint: "Encouraging creativity and new ideas through tech."
     },
     {
-        word: "dialectical self",
-        hint: "Concept that the self is formed through contradictions and synthesis."
+        word: "flexibility and mobility",
+        hint: "Enabling employees to work anytime, anywhere."
     },
     {
-        word: "intersubjectivity",
-        hint: "Shared understanding between individuals through social interaction."
+        word: "improved collaboration",
+        hint: "Better teamwork using technology like cloud services."
     },
     {
-        word: "rene descartes",
-        hint: "French philosopher who doubted everything except his own existence."
+        word: "enhanced safety and security",
+        hint: "Using technology to protect workplaces and people."
     },
     {
-        word: "david hume",
-        hint: "Scottish philosopher who challenged the notion of a continuous self."
+        word: "versatility across industries",
+        hint: "IS professionals can work in healthcare, finance, retail, and more."
     },
     {
-        word: "immanuel kant",
-        hint: "German philosopher who explored the limits of human knowledge."
+        word: "entrepreneurship opportunities",
+        hint: "Starting a tech-driven business using IS knowledge."
     },
     {
-        word: "martin heidegger",
-        hint: "German philosopher who explored the question of Being."
+        word: "high demand",
+        hint: "Information systems skills are needed by almost every company."
     },
     {
-        word: "john locke",
-        hint: "English philosopher who believed experience shapes who we are."
+        word: "high earning potential",
+        hint: "Information systems careers often pay competitive salaries."
     },
     {
-        word: "charles horton cooley",
-        hint: "Sociologist who developed the looking glass self theory."
+        word: "enterprise architect",
+        hint: "A specialist who designs IT systems to support business goals."
     },
     {
-        word: "erving goffman",
-        hint: "Sociologist who described social life as a theatrical performance."
+        word: "chief information officer",
+        hint: "Top executive responsible for managing a company's IT strategy."
     },
     {
-        word: "abraham maslow",
-        hint: "Psychologist famous for his hierarchy of needs theory."
+        word: "machine learning",
+        hint: "AI technique helping computers learn from data automatically."
     },
     {
-        word: "william james",
-        hint: "Philosopher and psychologist who explored the stream of consciousness."
+        word: "supply chain management",
+        hint: "Coordinating production, shipping, and sales using technology."
     },
     {
-        word: "martin buber",
-        hint: "Jewish philosopher who explored I-Thou relationships."
-    },
-    {
-        word: "maurice merleau ponty",
-        hint: "Phenomenologist who emphasized the body's role in perception."
-    },
-    {
-        word: "lao tzu",
-        hint: "Ancient Chinese philosopher considered the founder of Taoism."
-    },
-    {
-        word: "siddhartha gautama",
-        hint: "Founder of Buddhism who taught about the illusion of self."
-    },
-    {
-        word: "michel foucault",
-        hint: "French philosopher who explored how power shapes identity."
-    },
-    {
-        word: "simone de beauvoir",
-        hint: "Feminist philosopher who wrote 'One is not born, but rather becomes, a woman.'"
+        word: "regulatory compliance",
+        hint: "Following government rules using business process management tools."
     }
 ];
+
 
 
 
